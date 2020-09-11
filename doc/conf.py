@@ -17,12 +17,11 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 
-import sys, os
+import os
 from catkin_pkg.packages import find_packages
 
 catkin_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 catkin_package = find_packages(catkin_dir).values()[0]
-
 
 # -- General configuration ------------------------------------------------
 
@@ -34,8 +33,8 @@ catkin_package = find_packages(catkin_dir).values()[0]
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.napoleon']  # Sphinx Support for Google-style docstrings
+              'sphinx.ext.viewcode',
+              'sphinx.ext.napoleon']  # Sphinx Support for Google-style docstrings
 
 # Sphinx Napoleon Configuration
 napoleon_google_docstring = True
@@ -94,7 +93,6 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
-
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -125,12 +123,10 @@ html_sidebars = {
     ]
 }
 
-
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'nmea_navsat_driverdoc'
-
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -160,7 +156,6 @@ latex_documents = [
      u'Steven Martin, Eric Perko, Ed Venator', 'manual'),
 ]
 
-
 # -- Options for manual page output ---------------------------------------
 
 # One entry per manual page. List of tuples
@@ -169,7 +164,6 @@ man_pages = [
     (master_doc, 'nmea_navsat_driver', u'nmea_navsat_driver Documentation',
      [author], 1)
 ]
-
 
 # -- Options for Texinfo output -------------------------------------------
 
@@ -181,6 +175,3 @@ texinfo_documents = [
      author, 'nmea_navsat_driver', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-
